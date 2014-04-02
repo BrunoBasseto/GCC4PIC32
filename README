@@ -1,0 +1,29 @@
+
+*************    PIC32 GCC framework    ***************
+****     By Bruno Basseto (bruno@wise-ware.org)    ****
+
+This simple framework can be used to build Microchip PIC32 applications 
+with the MIPS-GCC-newlib toolchain.
+
+Files:
+
+/build
+sample makefile, to automatize the compiling process.
+
+/include
+contains header files specific for PIC32 registers, 
+configuration bits and interrupt definitions.
+
+/lib
+contains crt.o source code specific for PIC32 
+initialization and special function register allocation 
+in memory. 
+
+/ld
+contains linker scripts for distributing objects into 
+PIC32 memory.
+
+/bin
+contains helper scripts for testing compiled ELF files and 
+translating them into physical-addressed Intel-HEX files.
+
